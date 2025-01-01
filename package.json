@@ -17,6 +17,7 @@
     "bootstrap": "^5.3.3",
     "eleventy-plugin-bibtex": "^0.1.1",
     "fs": "^0.0.1-security",
+    "html-minifier": "^4.0.0",
     "luxon": "^3.5.0",
     "mathjax": "^3.2.2"
   },
