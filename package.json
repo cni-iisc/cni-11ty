@@ -1,0 +1,26 @@
+{
+  "name": "cni_11ty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx @11ty/eleventy --serve",
+    "start": "npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "bibtex-parse": "^2.1.0",
+    "bootstrap": "^5.3.3",
+    "eleventy-plugin-bibtex": "^0.1.1",
+    "fs": "^0.0.1-security",
+    "luxon": "^3.5.0",
+    "mathjax": "^3.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
