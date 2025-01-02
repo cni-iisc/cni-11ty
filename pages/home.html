@@ -8,7 +8,6 @@ permalink: "/"
 
 {% set ctimeStamp = footerInfo.currentTimeStamp | date("yyyy-MM-dd HH:mm:ss") %}
 {% set seminar = seminars | first %}
-{% set posts = collections.posts %}
 
 
 <h1 class="dispaly-1 text-center mt-1 mb-3">Centre for Networked Intelligence</h1>
@@ -84,7 +83,7 @@ permalink: "/"
       <div class="table-responsive">
         <table class="table table-borderless bg-transparent text-body">
           <tbody>
-            {% for post in collections.posts %}
+            {% for post in collections.updates %}
             {% set post_date = post.date %}
             {% if loop.index <= 4 %}
             <tr>
