@@ -9,8 +9,10 @@ layout: base.html
 {% set seminars = collections.seminars | sort('date') | reverse %}
 
 
-<div class="container mt-2 text-center">
+<div class="container-fluid mt-2 text-center">
     <h1>Network Seminar Series</h1>
+    <a type="button" class="btn button-style" style="margin-top: 20px; margin-bottom: 20px;"
+        href="/seminars/2024/">2024</a>
     <a type="button" class="btn button-style" style="margin-top: 20px; margin-bottom: 20px;"
         href="/seminars/2023/">2023</a>
     <a type="button" class="btn button-style" style="margin-top: 20px; margin-bottom: 20px;"
@@ -26,13 +28,13 @@ layout: base.html
     <h2>Past Network Seminars {{ this_year }}</h2>
 </div>
 
-<div class="container text-center mt-2 mb-4">
-    <div class="row">
+<div class="container justify-content-center my-4">
+    <div class="row jusitfy-content-center gap-0">
         {% for seminar in seminars %}
         {% set seminar_year = seminar.data.date | date("yyyy") %}
         {% set seminar_date = seminar.data.date | utcDate %}
         {% if seminar_year == this_year %}
-        <div class="col-md-6 col-lg-4 col-xl-3 col-sm-1 mb-2"> <!-- Adjust column width as needed -->
+        <div class="col-lg-3 col-sm-6 mb-2 d-flex justify-content-center gap-0"> <!-- Adjust column width as needed -->
             <div class="card mb-3">
                 {% if seminar_year == 2019 or seminar_year == 2020 %}
                 <img class="card-img-top img-fluid" src="/{{ seminar.data.img }}" alt="{{ seminar.data.title }}">
